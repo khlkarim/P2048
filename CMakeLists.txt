@@ -23,9 +23,10 @@ if (NOT raylib_FOUND) # If there's none, fetch and build raylib
 endif()
 
 # Our Project
-add_executable(${PROJECT_NAME} src/main.c)
+add_executable(${PROJECT_NAME} src/main.c src/grid.c src/game.c src/graphics.c src/utils.c)
 #set(raylib_VERBOSE 1)
 target_link_libraries(${PROJECT_NAME} raylib)
+target_include_directories(${PROJECT_NAME} PUBLIC include)
 
 # Web Configurations
 if (${PLATFORM} STREQUAL "Web")
