@@ -11,7 +11,7 @@ int main(void){
     srand((unsigned int)time(NULL));
     SetRandomSeed((unsigned int)time(NULL));
 
-    InitWindow(SCREEN_WIDTH, SCREEN_HEIGHT, "p2048");
+    InitWindow(SCREEN_WIDTH, SCREEN_HEIGHT, "2048");
     SetTargetFPS(60);
 
     Grid* grid = createGrid(N, M);

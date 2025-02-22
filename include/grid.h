@@ -2,9 +2,7 @@
 #define GRID_H
 
 #include "utils.h"
-#include <raylib.h>
 
-#include <stdio.h>
 #include <stdbool.h>
 
 typedef struct Grid{

@@ -207,7 +207,6 @@ int updateGrid(Grid* grid){
         shiftGrid(grid, move);
 
         fillRandomCell(grid);
-        printMatrix(grid);
     }
 
     return 1;

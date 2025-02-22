@@ -19,8 +19,11 @@ int drawGrid(Grid* grid){
             snprintf(str, sizeof(str), "%d", val);
             int fontSize = 64;
             
-            DrawRectangle(posX+3, posY+3, cellWidth-6, cellHeight-6, WHITE);
-            DrawText(str, posX + cellWidth/2 - MeasureText(str, fontSize)/2, posY + cellHeight/2 - fontSize/2, fontSize, BLACK);
+            if(grid->ptr[i][j] != 0)
+            {
+                DrawRectangle(posX+3, posY+3, cellWidth-6, cellHeight-6, getColor(val));
+                DrawText(str, posX + cellWidth/2 - MeasureText(str, fontSize)/2, posY + cellHeight/2 - fontSize/2, fontSize, BLACK);
+            }
         }
     }
 
