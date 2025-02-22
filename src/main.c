@@ -12,6 +12,10 @@ int main(void){
     SetRandomSeed((unsigned int)time(NULL));
 
     InitWindow(SCREEN_WIDTH, SCREEN_HEIGHT, "2048");
+
+    Image image = LoadImage("assets/icon.png");
+    SetWindowIcon(image);
+    UnloadImage(image);
     SetTargetFPS(60);
 
     Grid* grid = createGrid(N, M);
