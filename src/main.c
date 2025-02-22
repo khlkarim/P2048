@@ -37,3 +37,7 @@ int main(void){
     CloseWindow();
     return 0;
 }
+
+int WinMain(void){
+    main();
+}
